@@ -10,7 +10,7 @@ SCA scans:
 - CVE references
 - Recommended fixed versions
 
-🔍 What is SCA?
+## 🔍 What is SCA?
 
 Software Composition Analysis (SCA) identifies security vulnerabilities in:
 - Open-source libraries
@@ -27,7 +27,7 @@ SCA tools analyze:
 - CVE identifiers
 - Recommended remediations
 
-⚠ Why SCA is Important
+## ⚠ Why SCA is Important
 
 Without SCA:
 - Developers may unknowingly use vulnerable packages
@@ -41,7 +41,7 @@ With SCA:
 - Safe version upgrades are recommended
 - DevSecOps pipelines can fail builds automatically
 
-🧪 Practical Demo Using pip-audit
+## 🧪 Practical Demo Using pip-audit
 
 We will:
 - Create a virtual environment
@@ -49,7 +49,7 @@ We will:
 - Scan requirements.txt
 - Review vulnerabilities
 
-🚀 Step 1 — Create Virtual Environment
+## 🚀 Step 1 — Create Virtual Environment
 ```bash
 python -m venv .venv
 ```
@@ -58,7 +58,7 @@ Activate environment (Windows Git Bash):
 source .venv/Scripts/activate
 ```
 
-📦 Step 2 — Install pip-audit
+## 📦 Step 2 — Install pip-audit
 ```bash
 pip-audit -r requirements.txt
 ```
@@ -71,14 +71,14 @@ This command:
 - Displays CVE numbers
 - Suggests fixed versions
 
-📊 Example Output
+## 📊 Example Output
 
 Package     Version  ID                  Fix Versions
 ----------  -------  -------------------  -------------
 urllib3     1.25.8   PYSEC-2021-123      1.26.5
 requests    2.19.1   CVE-2018-18074      2.20.0
 
-🧠 What This Means
+## 🧠 What This Means
 | Field        | Explanation                               |
 | ------------ | ----------------------------------------- |
 | Package      | Vulnerable dependency                     |
@@ -86,7 +86,7 @@ requests    2.19.1   CVE-2018-18074      2.20.0
 | ID           | Vulnerability reference (CVE or advisory) |
 | Fix Versions | Secure version to upgrade                 |
 
-🔐 What Developers Must Do
+## 🔐 What Developers Must Do
 - When vulnerability is found:
 - Check severity (Critical/High/Medium)
 - Review CVE description
@@ -94,7 +94,7 @@ requests    2.19.1   CVE-2018-18074      2.20.0
 - Test application
 - Commit version bump
 
-🧬 How SCA Detects Indirect Dependencies
+## 🧬 How SCA Detects Indirect Dependencies
 
 Example:
 Your App
@@ -105,7 +105,7 @@ SCA scans it because it’s part of the dependency tree.
 
 This is critical for supply-chain security.
 
-📌 Sample Vulnerability Explanation
+## 📌 Sample Vulnerability Explanation
 
 Refer to vulnerability databases like:
 - NVD (National Vulnerability Database)
@@ -121,7 +121,7 @@ Each CVE includes:
 
 Developers must assess business impact before patching.
 
-🔄 CI/CD Integration (DevSecOps)
+## 🔄 CI/CD Integration (DevSecOps)
 
 You can integrate SCA into pipelines:
 pip-audit -r requirements.txt --strict
@@ -131,7 +131,7 @@ If vulnerabilities are found:
 - Report is generated
 - Security team notified
 
-🏗 SCA in DevSecOps Lifecycle
+## 🏗 SCA in DevSecOps Lifecycle
 
 Code → Build → SCA Scan → Deploy
 
@@ -141,7 +141,7 @@ SCA ensures:
 - Early vulnerability detection
 - Continuous monitoring
 
-🆚 SCA vs SAST vs DAST
+## 🆚 SCA vs SAST vs DAST
 
 | Security Type | What It Scans            |
 | ------------- | ------------------------ |
@@ -151,7 +151,7 @@ SCA ensures:
 
 SCA focuses on supply-chain risk.
 
-🏆 Key Takeaways
+## 🏆 Key Takeaways
 - Modern apps rely heavily on open-source packages
 - Vulnerabilities can exist in indirect dependencies
 - SCA identifies known CVEs
