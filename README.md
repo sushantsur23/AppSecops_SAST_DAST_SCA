@@ -59,7 +59,7 @@ Detects:
 
 Tool Used:
 
-v🐍 pip-audit
+🐍 pip-audit
 - Detects:
 - Vulnerable dependencies
 - Indirect (transitive) vulnerabilities
