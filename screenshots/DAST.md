@@ -27,7 +27,7 @@ We use:
 OWASP Juice Shop is an intentionally vulnerable e-commerce application designed for security testing and training.
 
 ## 🎥 DAST Demo Video Walkthrough
-<video src="DAST-Demo.mp4" controls width="800"></video>
+👉 [Click here to watch the demo](./DAST-Demo.mp4)
 
 
 🚀 Step 1 — Run Juice Shop (Target Application)
